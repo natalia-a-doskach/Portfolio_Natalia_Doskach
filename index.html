@@ -2,18 +2,116 @@
 <html lang="en">
 
 <head>
-  <title>Product Landing Page</title>
+  <title>Natalia Doskach | Front-End Developer</title>
   <link rel="stylesheet" href='style.css'>
   <link rel='shortcut icon' href='favicon.png' type='image/x-icon'>
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <meta name='viewport' content="width=device-width,initial-scale=1.0">
 </head>
 
 <body>
   <header>
+    <nav>
+      <ul>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+        <nav>
+      </ul>
   </header>
   <main>
+    <section id="home">
+      <p id="home_text">Hello, I’m <span>Natalia Doskach</span>.<br /> I’m a newbie front-end web developer.</p>
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <div class="about_div" id="about_me">
+        <img class="about_pic" src="pictures/profile_pic.jpg" alt="profile picture">
+        <p class="bold_text">I'm a front-end web developer based in Irkutsk, Russia.</p>
+        <p class="regular_text"> I enjoy learning new things, making stuff look good and problem-solving. When I'm not coding or designing, you'll find me teaching kids Math, playing with my cat or listening to “Hamilton” for the 100th time.</p>
+      </div>
+      <div class="about_div" id="free_code_camp">
+        <img class="about_pic" src="pictures/FCC.png" alt="free code camp logo">
+        <p class="bold_text">I'm currently a freeCodeCamp student.</p>
+        <p class="regular_text"> Every certificate requires about 300 hours to complete, but I’m determined to obtain all of them. Right now I’m a happy owner of a “Responsive Web Design” certificate.</p>
+      </div>
+      <div class="about_div" id="skills">
+        <h3>skills</h3>
+        <div class="skills_card"><img src="pictures/HTML.jpg" alt="HTML" class="skills_pic">
+          <p>HTML
+            (incl. HTML5)</p>
+        </div>
+        <div class="skills_card"><img src="pictures/CSS.png" alt="CSS" class="skills_pic">
+          <p>CSS
+(incl. CSS3)</p>
+        </div>
+        <div class="skills_card"><img src="pictures/JS.png" alt="JS" class="skills_pic">
+          <p>JavaScript
+(incl. ES6)</p>
+        </div>
+        <div class="skills_card"><img src="pictures/git.png" alt="Git and GitHub" class="skills_pic">
+          <p>Git & GitHub</p>
+        </div>
+        <div class="skills_card"><img src="pictures/FIGMA.png" alt="Figma" class="skills_pic">
+          <p>Figma (UI & graphic design)</p>
+        </div>
+      </div>
+
+    </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <a href="https://natalia-a-doskach.github.io/TributePageFCC/">
+        <div class="portfolio_card">
+          <div class="portfolio_preview"><img src="#" alt="Tribute page">
+            <p>Tribute page</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://natalia-a-doskach.github.io/SurveyPageFCC/">
+        <div class="portfolio_card">
+          <div class="portfolio_preview"><img src="#" alt="Coding Survey">
+            <p>Coding Survey</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://natalia-a-doskach.github.io/SurveyPageFCC/">
+        <div class="portfolio_card">
+          <div class="portfolio_preview"><img src="#" alt="JS documentation">
+            <p>JS documentation</p>
+          </div>
+        </div>
+      </a>
+      <a href="https://natalia-a-doskach.github.io/SurveyPageFCC/">
+        <div class="portfolio_card">
+          <div class="portfolio_preview"><img src="#" alt="MOLLUSC swimwear">
+            <p>MOLLUSC swimwear</p>
+          </div>
+        </div>
+      </a>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact_card">
+        <div class="contact_pic"><img src="#" alt="email">
+          <p>natalia.a.doskach@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="contact_card">
+        <div class="contact_pic"><img src="#" alt="github">
+          <a target=_blank href="https://github.com/natalia-a-doskach">https://github.com/natalia-a-doskach
+          </a>
+        </div>
+      </div>
+      <div class="contact_card">
+        <div class="contact_pic"><img src="#" alt="twitter">
+          <a target=_blank href="https://twitter.com/natasha_codes">https://twitter.com/natasha_codes
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     <p>Made with pure HTML, CSS & love by <a target='_blank' href='https://github.com/natalia-a-doskach'>Natalia Doskach</a>.</p>
