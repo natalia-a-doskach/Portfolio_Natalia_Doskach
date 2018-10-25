@@ -228,8 +228,10 @@ footer a:hover {
 
 /*MEDIA QUERIES*/
 @media (max-width:608px) {
+  html{
     margin-left: 10px;
-  margin-right: 10px;
+    margin-right: 10px;
+  }
   #certificates{
   grid-template-columns: repeat(2,1fr);}
   #certificates img{
