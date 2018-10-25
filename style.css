@@ -113,8 +113,8 @@ nav a:hover {
 
 #skills {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 7.5rem);
-  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem,auto));
+  grid-gap: 1rem;
 }
 
 .skills_pic {
@@ -128,10 +128,10 @@ nav a:hover {
 }
 #certificates{
 display: grid;
-grid-template-columns: repeat(auto-fill, 7.5rem);
+grid-template-columns: repeat(3,1fr);
 grid-gap: 1rem;}
 #certificates img{
-  width:7.5rem;
+  width:15vw;
 }
 
 /*PORTFOLIO PAGE*/
@@ -227,13 +227,12 @@ footer a:hover {
 }
 
 /*MEDIA QUERIES*/
-@media(max-width:320px){
-  html{font-size:16px;}
-  .contact_text {
-    font-size:0.9rem;
-  }
-}
 @media (max-width:608px) {
+  #certificates{
+  grid-template-columns: repeat(2,1fr);}
+  #certificates img{
+    width:25vw;
+  }
   .text_and_pic {
     display: block;
   }
@@ -273,6 +272,15 @@ footer a:hover {
 
   #skills {
     grid-gap: 0.5rem;
+  }
+}
+@media(max-width:320px){
+  html{font-size:16px;}
+  .contact_text {
+    font-size:0.9rem;
+  }
+  #certificates{
+  display: block;
   }
 }
 
