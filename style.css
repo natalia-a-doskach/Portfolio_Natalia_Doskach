@@ -6,6 +6,8 @@ body {
   background-color: #2A2A2A;
   color: #FFFDFD;
   font-family: 'Raleway', sans-serif;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 section {
@@ -123,6 +125,13 @@ nav a:hover {
 
 .skills_card {
   text-align: center;
+}
+#certificates{
+display: grid;
+grid-template-columns: repeat(auto-fill, 7.5rem);
+grid-gap: 1rem;}
+#certificates img{
+  width:7.5rem;
 }
 
 /*PORTFOLIO PAGE*/
