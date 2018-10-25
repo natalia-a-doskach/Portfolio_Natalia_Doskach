@@ -18,8 +18,8 @@
         <li><a href="#about">about</a></li>
         <li><a href="#portfolio">portfolio</a></li>
         <li><a href="#contact">contact</a></li>
-        <nav>
-      </ul>
+    </nav>
+    </ul>
   </header>
   <main>
     <section id="home">
@@ -27,89 +27,103 @@
     </section>
     <section id="about">
       <h2>About</h2>
-      <div class="about_div" id="about_me">
+      <div class="about_div text_and_pic" id="about_me">
         <img class="about_pic" src="pictures/profile_pic.jpg" alt="profile picture">
-        <p class="bold_text">I'm a front-end web developer based in Irkutsk, Russia.</p>
-        <p class="regular_text"> I enjoy learning new things, making stuff look good and problem-solving. When I'm not coding or designing, you'll find me teaching kids Math, playing with my cat or listening to “Hamilton” for the 100th time.</p>
-      </div>
-      <div class="about_div" id="free_code_camp">
-        <img class="about_pic" src="pictures/FCC.png" alt="free code camp logo">
-        <p class="bold_text">I'm currently a freeCodeCamp student.</p>
-        <p class="regular_text"> Every certificate requires about 300 hours to complete, but I’m determined to obtain all of them. Right now I’m a happy owner of a “Responsive Web Design” certificate.</p>
-      </div>
-      <div class="about_div" id="skills">
-        <h3>skills</h3>
-        <div class="skills_card"><img src="pictures/HTML.jpg" alt="HTML" class="skills_pic">
-          <p>HTML
-            (incl. HTML5)</p>
-        </div>
-        <div class="skills_card"><img src="pictures/CSS.png" alt="CSS" class="skills_pic">
-          <p>CSS
-(incl. CSS3)</p>
-        </div>
-        <div class="skills_card"><img src="pictures/JS.png" alt="JS" class="skills_pic">
-          <p>JavaScript
-(incl. ES6)</p>
-        </div>
-        <div class="skills_card"><img src="pictures/git.png" alt="Git and GitHub" class="skills_pic">
-          <p>Git & GitHub</p>
-        </div>
-        <div class="skills_card"><img src="pictures/FIGMA.png" alt="Figma" class="skills_pic">
-          <p>Figma (UI & graphic design)</p>
+        <div class="about_text">
+          <p class="bold_text">I'm a front-end web developer based in Irkutsk, Russia.</p>
+          <p class="regular_text"> I enjoy learning new things, making stuff look good and problem-solving. When I'm not coding or designing, you'll find me teaching kids Math, playing with my cat or listening to musicals.</p>
         </div>
       </div>
 
+      <div class="about_div">
+        <h3>skills</h3>
+        <div id="skills">
+          <div class="skills_card"><img src="pictures/HTML.jpg" alt="HTML" class="skills_pic">
+            <p>HTML<br />
+              (incl. HTML5)</p>
+          </div>
+          <div class="skills_card"><img src="pictures/CSS.png" alt="CSS" class="skills_pic">
+            <p>CSS<br />
+              (incl. CSS3)</p>
+          </div>
+          <div class="skills_card"><img src="pictures/JS.png" alt="JS" class="skills_pic">
+            <p>JavaScript<br />
+              (incl. ES6)</p>
+          </div>
+          <div class="skills_card"><img src="pictures/git_github.png" alt="Git and GitHub" class="skills_pic">
+            <p>Git & GitHub</p>
+          </div>
+          <div class="skills_card"><img src="pictures/FIGMA.png" alt="Figma" class="skills_pic">
+            <p>Figma (UI<br /> & graphic design)</p>
+          </div>
+        </div>
+      </div>
+      <div class="about_div" id="free_code_camp">
+        <div class="text_and_pic">
+          <img class="about_pic" src="pictures/FCC.png" alt="free code camp logo">
+          <div id="about-text">
+            <p class="bold_text">I'm currently a freeCodeCamp student.</p>
+            <p class="regular_text"> Every certificate requires about 300 hours to complete, but I’m determined to obtain all of them. Right now I’m a happy owner of a “Responsive Web Design” certificate.</p>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="portfolio">
       <h2>Portfolio</h2>
-      <a href="https://natalia-a-doskach.github.io/TributePageFCC/">
-        <div class="portfolio_card">
-          <div class="portfolio_preview"><img src="#" alt="Tribute page">
+      <div id="portfolio_cards">
+        <a target="_blank" href="https://natalia-a-doskach.github.io/TributePageFCC/">
+          <div class="portfolio_card">
+            <div class=" portfolio_preview"><img class="portfolio_pic" src="pictures/Tribute_Page.png" alt="Tribute page">
+
+            </div>
             <p>Tribute page</p>
           </div>
-        </div>
-      </a>
-      <a href="https://natalia-a-doskach.github.io/SurveyPageFCC/">
-        <div class="portfolio_card">
-          <div class="portfolio_preview"><img src="#" alt="Coding Survey">
+        </a>
+        <a target="_blank" href="https://natalia-a-doskach.github.io/SurveyPageFCC/">
+          <div class="portfolio_card">
+            <div class=" portfolio_preview"><img class="portfolio_pic" src="pictures/Survey.png" alt="Coding Survey">
+
+            </div>
             <p>Coding Survey</p>
           </div>
-        </div>
-      </a>
-      <a href="https://natalia-a-doskach.github.io/SurveyPageFCC/">
-        <div class="portfolio_card">
-          <div class="portfolio_preview"><img src="#" alt="JS documentation">
+        </a>
+        <a target="_blank" href="https://natalia-a-doskach.github.io/TechnicalDocsPageFCC/">
+          <div class="portfolio_card">
+            <div class=" portfolio_preview"><img class="portfolio_pic" src="pictures/Technical_Page.png" alt="JS documentation">
+
+            </div>
             <p>JS documentation</p>
           </div>
-        </div>
-      </a>
-      <a href="https://natalia-a-doskach.github.io/SurveyPageFCC/">
-        <div class="portfolio_card">
-          <div class="portfolio_preview"><img src="#" alt="MOLLUSC swimwear">
+        </a>
+        <a target="_blank" href="https://natalia-a-doskach.github.io/ProductLandingPageFCC/">
+          <div class="portfolio_card">
+            <div class=" portfolio_preview"><img class="portfolio_pic" src="pictures/MOLLUSC.png" alt="MOLLUSC swimwear">
+
+            </div>
             <p>MOLLUSC swimwear</p>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
     </section>
     <section id="contact">
       <h2>Contact Me</h2>
       <div class="contact_card">
-        <div class="contact_pic"><img src="#" alt="email">
-          <p>natalia.a.doskach@gmail.com
-          </p>
-        </div>
+        <img src="pictures/mail.png" class="contact_pic" alt="email">
+        <p class="contact_text">natalia.a.doskach@gmail.com
+        </p>
+
       </div>
       <div class="contact_card">
-        <div class="contact_pic"><img src="#" alt="github">
-          <a target=_blank href="https://github.com/natalia-a-doskach">https://github.com/natalia-a-doskach
-          </a>
-        </div>
+        <img src="pictures/git.png" class="contact_pic" alt="github">
+        <a class="contact_text" target=_blank href="https://github.com/natalia-a-doskach">https://github.com/natalia-a-doskach
+        </a>
+
       </div>
       <div class="contact_card">
-        <div class="contact_pic"><img src="#" alt="twitter">
-          <a target=_blank href="https://twitter.com/natasha_codes">https://twitter.com/natasha_codes
-          </a>
-        </div>
+        <img src="pictures/twitter.png" class="contact_pic" alt="twitter">
+        <a class="contact_text" target=_blank href="https://twitter.com/natasha_codes">https://twitter.com/natasha_codes
+        </a>
+
       </div>
     </section>
   </main>

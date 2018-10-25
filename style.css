@@ -7,9 +7,17 @@ body {
   color: #FFFDFD;
   font-family: 'Raleway', sans-serif;
 }
-section{
-  margin-top:100px; /*FIX ME*/
+
+section {
+  padding-top: 3rem;
 }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
 /*NAV*/
 nav {
   font-family: 'Raleway', sans-serif;
@@ -19,71 +27,248 @@ nav {
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index:5;
+  border: green;
+  z-index: 5;
+  padding: 0.4rem;
   background-color: #2A2A2A;
 }
 
 nav ul {
   list-style-type: none;
   display: flex;
-justify-content: flex-start;
-padding-left:0px;
+  justify-content: flex-start;
+  padding-left: 0px;
+  margin: 0px;
 }
-nav li{
-  display:inline;
-  margin:0px 20px 0px 20px;
+
+nav li {
+  display: inline;
+  margin: 0px 20px 0px 20px;
 }
+
 nav a {
   color: #FFFDFD;
   text-decoration: none;
 }
+
+nav a:visited {
+  color: #E5E5E5;
+}
+
+nav a:hover {
+  color: #39D2AE;
+}
+
 /*HOME PAGE*/
+#home {
+  height: calc(100vh - 3rem);
+}
+
 #home_text {
-  font-weight: 600;
   font-size: 2rem;
   text-align: center;
-  margin: auto;
+  margin-top: 30vh;
   color: #E5E5E5;
 }
 
 #home_text span {
   color: #39D2AE;
 }
+
 /*ABOUT PAGE*/
-.about_div{
+.about_div {
   border: 1px solid #E5E5E5;
-border-radius: 5px;
-margin: 1rem;
-padding:0.6rem;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.6rem;
 }
-#about .bold_text{
+
+.text_and_pic {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-gap: 0.5rem;
+}
+
+#about .bold_text {
+  font-size: 1.4rem;
+}
+
+#about .regular_text {
   font-size: 1rem;
 }
-#about .regular_text{
-  font-size: 0.8rem;
-}
-#about h3{
+
+#about h3 {
   text-align: center;
-text-transform: uppercase;
-font-size: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
-.about_pic{
-  border-radius:50%;
-  width:8rem;
+
+.about_pic {
+  border-radius: 50%;
+  width: 8rem;
 }
-.skills_pic{
-  border-radius:50%;
-  width:5.8rem;
+
+#skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 7.5rem);
+  grid-gap: 2rem;
+}
+
+.skills_pic {
+  border-radius: 50%;
+  width: 8rem;
   background-color: #FFF;
 }
+
+.skills_card {
+  text-align: center;
+}
+
 /*PORTFOLIO PAGE*/
-.portfolio_card{
+#portfolio_cards {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.portfolio_card {
   border: 1px solid #E5E5E5;
-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+#portfolio a {
+  color: #FFFDFD;
+  text-decoration: none;
+}
+
+#portfolio a:visited {
+  color: #E5E5E5;
+}
+
+#portfolio a:hover {
+  transform: scale(1.05);
+}
+
+#portfolio a:active {
+  color: #39D2AE;
+}
+
+.portfolio_pic {
+  object-fit: cover;
+  width: 100%;
+}
+
+#portfolio p {
+  margin: 0px;
 }
 
 /*CONTACT*/
-.contact_card{
+.contact_card {
   border: 1px solid #E5E5E5;
-border-radius: 5px;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 0.5rem;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  grid-gap: 0.5rem;
+}
+
+.contact_pic {
+  border-radius: 50%;
+  width: 4.2rem;
+  background-color: #FFF;
+}
+
+#contact p {
+  display: inline;
+}
+
+#contact a {
+  color: #FFFDFD;
+}
+
+#contact a:visited {
+  color: #E5E5E5;
+}
+
+#contact a:hover {
+  color: #39D2AE;
+}
+
+/*header*/
+footer {
+  font-size: 0.7rem;
+  color: #E5E5E5;
+}
+
+footer a {
+  color: #A862A0;
+}
+
+footer a:visited {
+  color: #E5E5E5;
+}
+
+footer a:hover {
+  color: #39D2AE;
+}
+
+/*MEDIA QUERIES*/
+@media(max-width:320px){
+  html{font-size:16px;}
+  .contact_text {
+    font-size:0.9rem;
+  }
+}
+@media (max-width:608px) {
+  .text_and_pic {
+    display: block;
+  }
+
+  .about_pic {
+    margin-left: 35%;
+    margin-right: 35%;
+    width: 30%;
+    padding: 0px;
+  }
+
+  .bold_text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  #portfolio_cards {
+    display: block;
+  }
+
+  .portfolio_card {
+    margin: 1rem;
+  }
+
+  .contact_pic {
+    display: none;
+  }
+
+  .contact_card {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .skills_pic {
+    width: 6rem;
+  }
+
+  #skills {
+    grid-gap: 0.5rem;
+  }
+}
+
+@media(min-width:1024px) {
+  html {
+    font-size: 24px;
+  }
 }
